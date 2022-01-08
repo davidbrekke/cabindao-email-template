@@ -1,0 +1,134 @@
+<style>
+    .message-content {
+    max-width: 600px;
+    margin: 30px auto;
+    font-family: Georgia, Times, serif;
+    }
+    .message-content div {
+    padding-bottom: 10px;
+    }
+    .message-content img {
+    max-width: 100%;
+    height: auto;
+    }
+    
+    * {
+    font-family: Georgia, Times, serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    color: #333;
+    }
+    h1 {
+    font-size: 32px;
+    }
+    h2 {
+    font-size: 24px;
+    }
+    h3 {
+    font-size: 18px;
+    }
+    
+    p,
+    li,
+    ul,
+    ol,
+    div {
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: Georgia, Times, serif;
+    color: #333333;
+    }
+    
+    p *,
+    li * {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    }
+    
+    p,
+    ul,
+    ol {
+    margin-bottom: 1em;
+    }
+    
+    blockquote {
+    border-left: solid 5px #aaa;
+    margin: 20px 0px;
+    padding: 15px 30px;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-style: italic;
+    color: #444;
+    font-family: Georgia, Times, serif;
+    }
+    
+    a {
+    text-decoration: none;
+    border-bottom: 1px dotted #0875c1;
+    color: #0875c1;
+    }
+    
+    a:hover {
+    color: #1b8ede;
+    border-bottom-color: #1b8ede;
+    }
+    
+    .button {
+    border: none;
+    background: #777;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    }
+    
+    .button:hover {
+    color: #fff;
+    background: #666;
+    }
+    
+    .footer {
+    border-top: 1px dotted #888;
+    padding: 20px 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #aaa;
+    font-size: 12px;
+    }
+    
+    .social-links {
+    margin-bottom: 10px;
+    padding: 0px;
+    }
+    .social-links a {
+    text-align: center;
+    padding: 5px;
+    border: none;
+    }
+    </style>
+    <!--[if mso]>
+    <center>
+    <table><tr><td width="580">
+    <![endif]-->
+    <div class="message-content">
+    {{ message_content }}
+    
+    <div class="footer">
+    <a href="{{ unsubscribe_url }}">Unsubscribe</a> |
+    <a href="{{ subscriber_preferences_url }}">Update your profile</a> | {{ address }}
+    </div>
+    </div>
+    <!--[if mso]>
+    </td></tr></table>
+    </center>
+    <![endif]-->
