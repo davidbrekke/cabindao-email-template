@@ -1,3 +1,12 @@
+<!-- 
+    variables:
+    {{ postcard_date }} - date of the postcard
+    {{ community_call_date }} - date of the next community call
+    {{ unsubscribe_link }} - link to unsubscribe
+    {{ discord_link }} - link to discord
+
+ -->
+
 <style>
 * {
         margin: 0;
@@ -44,12 +53,10 @@
         font-size: 1.5em;
         font-weight: bold;
         padding-bottom: 1em;
-        /* padding-left: .5em; */
     }
     h3 {
         font-size: 1em;
         font-weight: bold;
-        /* padding-left: .25em; */
     }
     main {
         background-color: #FDF3E7;
@@ -89,7 +96,7 @@
         </div>
     </header>
     <main>
-        <!-- intro -->
+        {{ message_content }}
         <article class="article">
             <h2>Hey Cabin fam!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>        
@@ -117,7 +124,7 @@
             <h2>See you in our next community call in Discord on {{ community_call_date }}</h2>
         </article>
         <div class="actions">
-            <a class="join" target="_blank" href="https://discord.gg/N6hVmFygjR" >Join the community</a>
+            <a class="join" target="_blank" href="{{ discord_link }}" >Join the community</a>
             <a class="unsubscribe" target="_blank" href="{{ unsubscribe_link }}" >unsubscribe :(</a>
         </div>
     </main>
